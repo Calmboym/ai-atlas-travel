@@ -1,0 +1,35 @@
+# .gitignore
+#
+# DOCUMENTED: this file's existence is confirmed — DEBUG_LOG.md M0
+# record: ".gitignore, .env.example, README.md" delivered.
+# RECONSTRUCTED: exact entries are not given verbatim anywhere; the
+# categories below follow directly from the documented stack (Next.js
+# frontend, Python/uv backend, Docker, secrets policy in
+# GUIDELINES.md §17/§11).
+
+# --- Environment / secrets (GUIDELINES.md §17, §11) ---
+.env
+.env.local
+.env.*.local
+
+# --- Node / pnpm / Next.js (documented: pnpm, Next.js) ---
+node_modules/
+.next/
+next-env.d.ts
+.pnpm-store/
+
+# --- Python / uv (documented: uv-based backend) ---
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.pytest_cache/
+uv.lock
+
+# --- Docker ---
+*.pid
+
+# --- OS / editor noise (RECONSTRUCTED — not Atlas-specific) ---
+.DS_Store
+.vscode/
+.idea/
