@@ -1,0 +1,24 @@
+{
+  "_provenance": "See .ai/BOOTSTRAP_SPEC.md. Only \"strict\": true is independently documented (GUIDELINES.md: 'Strict TypeScript mode enabled'). All other compilerOptions below are reconstructed as the minimum required for a Next.js 16 + TypeScript project to build at all, per Next.js's own documented configuration mechanics (not Atlas-specific decisions). This key is not read by the TypeScript compiler and should be removed before real use; it exists only to keep provenance attached to this file since JSON does not support comments.",
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [{ "name": "next" }],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
